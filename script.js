@@ -36,6 +36,13 @@ const initialEvents = [
         date: "2025-10-20",
         venue: "Sports Complex",
         slots: 250
+    },
+    {
+        id: 6,
+        name: "Alumni Networking Dinner",
+        date: "2025-09-08",
+        venue: "Grand Ballroom",
+        slots: 0
     }
 ];
 
