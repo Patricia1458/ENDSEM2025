@@ -26,11 +26,22 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
 .title {
     font-size: 2rem;
     font-weight: 600;
     margin: 0;
-    text-align: center;
 }
 
 /* Main Content */
@@ -298,8 +309,19 @@ body {
         padding: 0 15px;
     }
     
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
     .title {
         font-size: 1.5rem;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
     }
     
     .events-section,
