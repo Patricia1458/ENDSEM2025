@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU-A Event Booking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Event Booking Dashboard</h1>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Success/Error Messages -->
+            <div id="message-container" class="message-container"></div>
+
+            <!-- Event List Section -->
+            <section class="events-section">
+                <h2>Upcoming Events</h2>
+                <div class="table-container">
+                    <table class="events-table" id="eventsTable">
+                        <thead>
+                            <tr>
+                                <th>Event Name</th>
+                                <th>Date</th>
+                                <th>Venue</th>
+                                <th>Slots Available</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="eventsTableBody">
+                            <!-- Events will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Registration Form Section -->
+            <section class="registration-section">
+                <h2>Register for an Event</h2>
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-group">
+                        <label for="studentName">Full Name:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="studentId">Student ID:</label>
+                        <input type="text" id="studentId" name="studentId" placeholder="e.g., 665437" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="selectedEvent">Select Event:</label>
+                        <select id="selectedEvent" name="selectedEvent" required>
+                            <option value="">Choose an event...</option>
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Register Now</button>
+                </form>
+                
+                <!-- Confirmation Message -->
+                <div id="confirmationMessage" class="confirmation-message"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 United States International University - Africa. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
